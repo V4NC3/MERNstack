@@ -1,0 +1,29 @@
+{
+  "name": "mernstack",
+  "version": "1.0.0",
+  "description": "Shopping list built with the MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/V4NC3/MERNstack.git"
+  },
+  "author": "V4NC3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/V4NC3/MERNstack/issues"
+  },
+  "homepage": "https://github.com/V4NC3/MERNstack#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
