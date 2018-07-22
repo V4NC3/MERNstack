@@ -6852,7 +6852,7 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uui@^1.0.3:
+uui@^3.3.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/uui/-/uui-1.0.3.tgz#c55c16edfdc5f85c57ea500ca168faae6ed2de31"
 
