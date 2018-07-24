@@ -12,6 +12,8 @@ import {
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
 
+import uuid from 'uuid';
+
 class ItemModal extends Component {
     state = {
         modal: false,
@@ -24,16 +26,24 @@ class ItemModal extends Component {
         });
     };
 
-    onChange = (e) => {
+    onChange = e => {
         this.setState({ [e.target.name]: e.target.value });
     };
 
-    render(){
+    onSubmit = e => {
+        e.preventDefault();
+
+        const newItem = {
+
+        }
+    }
+    
+    render() {
         return(
             <div>
                 <Button
                     color='dark'
-                    style={{marginBottom: ' 2rem'}}
+                    style={{marginBottom: '2rem'}}
                     onClick={this.toggle}
                 >Add Item</Button>
                 
@@ -46,13 +56,18 @@ class ItemModal extends Component {
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
                                 <Label for='item'>Item</Label>
-                                <input 
+                                <Input 
                                     type='text'
                                     name='name'
                                     id='item'
                                     placeholder='Add shopping item'
                                     onChange={this.onChange}    
                                 />
+                                <Button
+                                    color='dark'
+                                    style={{marginTop: '2rem'}}
+                                    block
+                                >Add Item</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>
