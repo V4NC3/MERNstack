@@ -34,8 +34,15 @@ class ItemModal extends Component {
         e.preventDefault();
 
         const newItem = {
-
+            id: uuid(),
+            name: this.state.name
         }
+
+        // Add item via addItem Action
+        this.props.addItem(newItem);
+
+        // Close modal
+        this.toggle();
     }
     
     render() {
@@ -77,4 +84,8 @@ class ItemModal extends Component {
     }
 }
 
-export default connect() (ItemModal);
+const mapStateToProps = state => ({
+    item: state.item
+});
+
+export default connect(mapStateToProps, { addItem }) (ItemModal);
