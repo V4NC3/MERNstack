@@ -61,7 +61,7 @@ ShoppingList.propTypes = {
     getItems: PropTypes.func.isRequired,
     // Represent out State, which is an Object -> mapping 
     item: PropTypes.object.isRequired
-}
+};
 
 const mapStateToProps = (state) => ({
     item: state.item
