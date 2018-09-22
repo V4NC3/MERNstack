@@ -1,4 +1,4 @@
-# MERNstack
+# MERNstack Shopping List
 MERN (MongoDB, Express, React, Node.js)
 
 # Install dependencies for server
